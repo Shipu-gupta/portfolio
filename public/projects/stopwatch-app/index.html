@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stopwatch App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app">
+        <button id="modeToggle" class="mode-toggle">🌙</button>
+
+        <h1 class="title">Stopwatch</h1>
+
+        <div class="circle">
+            <div id="display" class="time">00:00:00.00</div>
+        </div>
+
+        <div class="buttons-row">
+            <button id="startBtn" class="btn primary">Start</button>
+            <button id="stopBtn" class="btn">Stop</button>
+            <button id="resetBtn" class="btn">Reset</button>
+            <button id="lapBtn" class="btn">Lap</button>
+        </div>
+
+        <h2 class="laps-title">Laps</h2>
+        <ul id="lapsList" class="laps"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

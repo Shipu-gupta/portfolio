@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #7209b7, #4cc9f0);
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.container h1 {
+    font-size: 45px;
+}
+
+#typing {
+    color: #ff4d6d;
+    border-right: 3px solid white;
+    padding-right: 5px;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}

@@ -1,0 +1,1 @@
+import React from 'react';export default function Footer(){return (<footer className='site-foot glass'><div>© {new Date().getFullYear()} Shilpa Gupta</div><div className='muted'>Built with React • Vite</div></footer>);}

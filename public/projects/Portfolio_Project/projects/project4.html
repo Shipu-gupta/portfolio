@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stopwatch App | Project</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header class="inner-header">
+    <h1>⏱ STOPWATCH APP</h1>
+    <p>Built with JavaScript · Mobile Style · Dark Mode · Laps</p>
+</header>
+
+<div class="project-details" class="reveal">
+
+    <!-- Overview -->
+    <h2>Project Overview</h2>
+    <p>
+        This Stopwatch App is inspired by modern Android / iOS design. It uses a circular
+        timer layout with milliseconds, lap recording, dark mode, smooth animations and
+        localStorage so laps and theme are remembered even after refresh.
+    </p>
+
+    <!-- Feature list with icons -->
+    <h2>Key Features</h2>
+    <ul class="feature-list">
+        <li>⚡ Real-time stopwatch with milliseconds (centiseconds)</li>
+        <li>⭕ Circular mobile-style UI with gradient ring</li>
+        <li>🌙 Dark / Light mode toggle (saved in localStorage)</li>
+        <li>📋 Lap recording with latest lap on top</li>
+        <li>💾 Laps list persisted using localStorage</li>
+        <li>🎨 Glassmorphism look with soft shadows and rounded buttons</li>
+        <li>📱 Fully responsive for mobile and desktop</li>
+    </ul>
+
+    <!-- Live demo -->
+    <h2>Live Demo</h2>
+    <a href="../stopwatch-app/index.html" class="project-btn" target="_blank">
+        Open Stopwatch
+    </a>
+
+    <!-- Screenshot gallery (stacked + description) -->
+    <h2>UI Screenshots</h2>
+
+    <div class="screenshot-card">
+        <h3>Light Mode</h3>
+        <img src="../images/stopwatch-light.png"
+             alt="Stopwatch App – Light Mode">
+        <p>
+            Bright gradient background with a frosted-glass card, neon circle timer, and
+            clear control buttons. Lap list is easy to read and scroll.
+        </p>
+    </div>
+
+    <div class="screenshot-card">
+        <h3>Dark Mode</h3>
+        <img src="../images/stopwatch-dark.png"
+             alt="Stopwatch App – Dark Mode">
+        <p>
+            High-contrast dark theme with vivid accent colors. Perfect for low-light use,
+            while keeping the same layout and lap functionality.
+        </p>
+    </div>
+
+    <!-- Simple carousel (shows one screenshot at a time) -->
+    <h2>Screenshot Carousel</h2>
+    <div class="shot-carousel">
+        <button class="shot-nav" id="prevShot">◀</button>
+
+        <div class="shot-frame">
+            <img src="../images/stopwatch-light.png"
+                 class="shot active"
+                 alt="Stopwatch Light Mode">
+            <img src="../images/stopwatch-dark.png"
+                 class="shot"
+                 alt="Stopwatch Dark Mode">
+        </div>
+
+        <button class="shot-nav" id="nextShot">▶</button>
+    </div>
+
+</div>
+
+<!-- Small script for carousel -->
+<script>
+    const shots = document.querySelectorAll('.shot');
+    const prevBtn = document.getElementById('prevShot');
+    const nextBtn = document.getElementById('nextShot');
+
+    let currentIndex = 0;
+
+    function updateShots() {
+        shots.forEach((img, index) => {
+            img.classList.toggle('active', index === currentIndex);
+        });
+    }
+
+    prevBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex - 1 + shots.length) % shots.length;
+        updateShots();
+    });
+
+    nextBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % shots.length;
+        updateShots();
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,1 @@
+import React from 'react';import Hero from '../components/Hero';export default function Home(){return (<><Hero /><section className='intro'><div className='card glass'><h3>About this portfolio</h3><p className='muted'>Collection of small projects built every day. Includes a React multi-tool dashboard and utilities.</p></div></section></>);}

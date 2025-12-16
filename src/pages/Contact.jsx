@@ -1,0 +1,1 @@
+import React from 'react';import ContactForm from '../components/ContactForm';export default function Contact(){return (<section className='contact-page'><h2>Contact</h2><div style={{display:'grid',gap:12}}><div className='card glass'><p>Email: <a href='mailto:youremail@example.com'>youremail@example.com</a></p></div><ContactForm/></div></section>);}
