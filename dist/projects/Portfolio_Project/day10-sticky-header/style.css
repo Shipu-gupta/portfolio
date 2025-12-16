@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+#mainHeader {
+  background: #7209b7;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+}
+
+.content {
+  padding: 20px;
+  margin-top: 20px;
+  line-height: 1.7;
+}

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>iOS Todo App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <h1 class="title">Reminders</h1>
+
+    <div class="add-box">
+      <input id="todoInput" placeholder="New Reminder" />
+      <button id="addBtn">+</button>
+    </div>
+
+    <div class="filters">
+      <button class="filter active" data-filter="all">All</button>
+      <button class="filter" data-filter="active">Active</button>
+      <button class="filter" data-filter="completed">Completed</button>
+    </div>
+
+    <ul id="todoList" class="list"></ul>
+
+    <footer class="foot">iOS Style • Studywork Project</footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

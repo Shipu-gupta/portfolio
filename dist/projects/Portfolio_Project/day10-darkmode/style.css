@@ -1,0 +1,41 @@
+body {
+  font-family: Arial;
+  padding: 40px;
+  background: #ffffff;
+  color: #333;
+  transition: 0.4s;
+}
+
+.title {
+  text-align: center;
+  color: #7209b7;
+}
+
+#toggleBtn {
+  display: block;
+  margin: 20px auto;
+  padding: 12px 20px;
+  border: none;
+  background: #7209b7;
+  color: white;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#toggleBtn:hover {
+  background: #4cc9f0;
+  color: #000;
+}
+
+/* 🌙 Dark mode styles */
+.dark {
+  background: #1a1a1a;
+  color: #f1f1f1;
+}
+
+.dark #toggleBtn {
+  background: #4cc9f0;
+  color: black;
+}
