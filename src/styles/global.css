@@ -131,19 +131,26 @@ body{
 
 
 /* projects */
-.projects-grid{ display:grid; grid-template-columns: repeat(auto-fill,minmax(280px,1fr)); gap:18px; margin-top:18px; }
+.projects-grid
+{ 
+  display:grid; 
+  grid-template-columns: repeat(auto-fill,minmax(280px,1fr));
+   gap:18px; 
+     padding: 20px;
+   margin-top:18px; 
+  }
 .project-card{ 
   display:flex; 
   flex-direction:column; 
   gap:12px; height:100%; 
   transition: transform .22s ease, box-shadow .22s ease; 
   border-radius:12px; 
-  overflow:hidden; }
-.project-card:hover{ transform:translateY(-8px); box-shadow:0 18px 40px rgba(16,24,40,0.12); 
-width: 100%;
-  height: 170px;
-  object-fit: cover;
-  border-radius: 10px;}
+  overflow:visible;
+ }
+.project-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 18px 40px rgba(16,24,40,0.12);
+}
 .project-thumb {
   background: none; /* remove gradient background */
   padding: 0;
@@ -186,3 +193,17 @@ input, textarea{ padding:10px; border-radius:8px; border:1px solid rgba(255,255,
 .intro {
   margin-top: 20px;
 }
+.live-btn {
+  position: relative;
+  z-index: 10;
+  pointer-events: auto;
+  display: inline-block;
+}
+
+.live-btn:hover {
+  transform: translateY(-3px);
+}
+.card-overlay {
+  pointer-events: none;
+}
+
