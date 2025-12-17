@@ -30,12 +30,6 @@ A modern, responsive portfolio website built with **React and Vite** to showcase
 - Contact form with real email integration
 - Clean, reusable, and modular React components
 
----
-
-## 📸 Screenshots
-_Add screenshots of your homepage and projects section here (optional but recommended)._
-
----
 
 ## 🚀 Run Locally
 
