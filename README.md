@@ -8,7 +8,7 @@ A modern, responsive portfolio website built with **React and Vite** to showcase
 👉 https://shilpa-gupta-portfolio.netlify.app
 
 ## 💻 GitHub Repository
-👉 https://github.com/Shipu-gupta/creative-portfolio
+👉 https://github.com/Shipu-gupta/portfolio
 
 ---
 
