@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { FaGithub, FaLinkedin, FaMoon, FaSun, FaBars, FaTimes } from "react-icons/fa";
 
+
 export default function Navbar(){
   const loc = useLocation();
   const [open, setOpen] = useState(false);
@@ -37,8 +38,9 @@ export default function Navbar(){
         <a href="https://github.com/yourusername" target="_blank" rel="noreferrer" aria-label="GitHub"><FaGithub/></a>
         <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noreferrer" aria-label="LinkedIn"><FaLinkedin/></a>
 
-        <a className="resume-btn" href="/resume.pdf" target="_blank" rel="noreferrer">Resume</a>
-
+       <Link className="resume-btn" to="/resume">
+  Resume
+</Link>
         <button className="hamburger" onClick={() => setOpen(v => !v)} aria-label="Menu">
           {open ? <FaTimes /> : <FaBars />}
         </button>
@@ -51,6 +53,7 @@ export default function Navbar(){
           <Link onClick={() => setOpen(false)} to="/projects">Projects</Link>
           <Link onClick={() => setOpen(false)} to="/about">About</Link>
           <Link onClick={() => setOpen(false)} to="/contact">Contact</Link>
+          <Link onClick={() => setOpen(false)} to="/resume">Resume</Link>
         </div>
       )}
     </header>

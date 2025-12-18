@@ -60,6 +60,14 @@ const PROJECTS = [
     img: "/projects/day10-scroll-reveal/screenshot.png",
     demo: "/projects/day10-scroll-reveal/index.html"
   },
+  {
+    title: "Product Explorer (API-based)",
+    desc: "Advanced React project using public API with search, loading, and error handling.",
+    tech: ["React", "Vite", "API", "JavaScript"],
+    img: "/projects/product-explorer/screenshot.png", // optional for now
+    demo: "/product-explorer",
+    code: "https://github.com/your-username/creative-portfolio"
+  },
 ];
 
 export default function Projects() {

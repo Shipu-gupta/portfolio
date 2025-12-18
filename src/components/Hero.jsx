@@ -13,19 +13,17 @@ export default function Hero() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
       >
-        <h1>Hi — I'm <span className="accent">Shilpa</span></h1>
+       <h1>
+  Hi, I’m <span className="accent">Shilpa Gupta</span>
+</h1>
+<p className="lead">
+  Frontend Developer specializing in React & modern UI development.
+</p>
 
-        <p className="lead">
-          Front-End developer building clean UI, React apps and small utilities.
-          I build daily to level up my craft.
-        </p>
-
-        <div className="hero-buttons">
-          <Link to="/projects" className="btn primary">See Projects</Link>
-          <a href="/resume.pdf" className="btn ghost" target="_blank" rel="noreferrer">
-            Download Resume
-          </a>
-        </div>
+<div className="hero-buttons">
+  <Link to="/projects" className="btn primary">View Projects</Link>
+  <Link to="/resume" className="btn ghost">View Resume</Link>
+</div>
       </motion.div>
 
       <motion.div 
